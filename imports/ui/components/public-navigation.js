@@ -6,7 +6,7 @@ export const PublicNavigation = () => (
   <div>
     <Nav>
       <LinkContainer to="/pdfs">
-        <NavItem eventKey={ 1 } href="/documents">PDFs</NavItem>
+        <NavItem eventKey={ 1 } href="/pdfs">PDFs</NavItem>
       </LinkContainer>
     </Nav>
     <Nav pullRight>
