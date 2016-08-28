@@ -6,13 +6,13 @@ export const PDFs = new Mongo.Collection('PDFs')
 PDFs.allow({
   insert: () => false,
   update: () => false,
-  delete: () => false,
+  remove: () => false,
 })
 
 PDFs.deny({
   insert: () => true,
   update: () => true,
-  delete: () => true,
+  remove: () => true,
 })
 
 PDFs.schema = new SimpleSchema({
