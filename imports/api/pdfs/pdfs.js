@@ -1,5 +1,7 @@
+import faker from 'faker'
 import { Mongo } from 'meteor/mongo'
 import { SimpleSchema } from 'meteor/aldeed:simple-schema'
+import { Factory } from 'meteor/dburles:factory'
 
 export const PDFs = new Mongo.Collection('PDFs')
 
@@ -31,3 +33,7 @@ PDFs.schema = new SimpleSchema({
 })
 
 PDFs.attachSchema(PDFs.schema)
+
+Factory.define('pdf', PDFs, {
+  title: () => faker.hacker.phrase(),
+})

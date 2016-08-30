@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { AddPDF } from '../components/add-pdf'
-import { PDFsList } from '../components/pdfs-list'
+import PDFsList from '../containers/pdfs-list'
 
 export const PDFs = () => (
   <Row>
